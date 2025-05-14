@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            position: relative;
+        }
+        .gallery {
+            display: flex;
+            gap: 10px;
+            margin-top: 50px; /* Baja un poco la imagen */
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+        .next-button, .home-button, .prev-button {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        .next-button {
+            right: 20px;
+            bottom: 20px;
+        }
+        .home-button {
+            left: 20px;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="pa1.jpg" alt="pez1">
+    </div>
+    <button class="home-button" onclick="location.href='info12.html'">🏠</button>
+</body>
+</html>
